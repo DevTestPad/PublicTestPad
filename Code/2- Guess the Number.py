@@ -17,10 +17,10 @@ remaining_guesses = 0
 # helper function to start and restart the game
 
 def new_game():
-    print "----------------------------------------"
-    print "----------------------------------------"
+    print( "----------------------------------------")
+    print( "----------------------------------------")
     
-    print "New game. Range is from 0 to", num_range
+    print( "New game. Range is from 0 to", num_range)
     
     global secret_number, remaining_guesses
     
@@ -28,7 +28,7 @@ def new_game():
 
     remaining_guesses = int( math.ceil(math.log(num_range, 2)) )
     
-    print "Total Guesses:", remaining_guesses
+    print( "Total Guesses:", remaining_guesses)
     
     
 #------------------------------------------
@@ -63,16 +63,16 @@ def input_guess(guess):
     print "Guess was", guess
     
     if guess < secret_number:
-        print "Higher!"
+        print( "Higher!")
     elif guess > secret_number:
-        print "Lower!"
+        print( "Lower!")
     else:
-        print "Correct!"
+        print( "Correct!")
         new_game()
         return
     
     remaining_guesses -= 1
-    print ""
+    print ("")
     print "Number of remaining guesses is :", remaining_guesses
     
     if remaining_guesses == 0:
