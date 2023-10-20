@@ -67,10 +67,10 @@ def number_to_name(number):
 
 def rpsls(player_choice): 
     
-    print "------------"
-    print "------------"    
+    print( "------------")
+    print( "------------")
     
-    print "Player chooses " + player_choice 
+    print( "Player chooses " + player_choice )
     
     player_number = name_to_number(player_choice)
     
@@ -78,14 +78,14 @@ def rpsls(player_choice):
     
     comp_choice = number_to_name(comp_number)
     
-    print "Computer chooses " + comp_choice 
+    print( "Computer chooses " + comp_choice) 
     
     diff = (comp_number - player_number) % 5
 
     if diff == 1 or diff == 2:
-        print "Computer Wins"
+        print( "Computer Wins")
     elif diff == 3 or diff == 4:
-        print "Player Wins"
+        print( "Player Wins")
     else:
         print( "Player and computer tie!")
  
