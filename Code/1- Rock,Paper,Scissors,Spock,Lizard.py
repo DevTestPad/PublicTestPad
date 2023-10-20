@@ -37,7 +37,7 @@ def name_to_number(name):
     elif name == "scissors":
         return 4
     else:
-        print "Error: Not a valid name" 
+        print( "Error: Not a valid name" )
 
 #----------------------------------------------------------
 #----------------------------------------------------------
@@ -58,7 +58,7 @@ def number_to_name(number):
     elif number == 4:
         return "scissors" 
     else:
-        print "Error: Not a valid number" 
+        print( "Error: Not a valid number" )
     
     
 #----------------------------------------------------------    
@@ -87,7 +87,7 @@ def rpsls(player_choice):
     elif diff == 3 or diff == 4:
         print "Player Wins"
     else:
-        print "Player and computer tie!"
+        print( "Player and computer tie!")
  
 
 #----------------------------------------------------------
@@ -104,7 +104,7 @@ def get_input(inp):
 			inp == "Spock" or inp == "scissors"):		
 		rpsls(inp)
 	else:
-		print "Error: Invalid Input"
+		print( "Error: Invalid Input")
 	
 	
 
